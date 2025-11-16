@@ -23,17 +23,26 @@ color: white;
 <h1>Welcome to my very first clicker game</h1>  
   
 <p>Click the buttons to get a higher score</p>
-
-<button>Click me!</button>
-
+<p> id = "scoreText">Score: 0</p>
+  <p> id = "ClickerText"> Clickers:</p>
+<button> id= "Clicks">Click me!</button>
+<button> id ="clickers"> Click here to buy more clickers</button>
   <script>
-
-
-
+    let Clicks = 0;
+    let clickers = 1;
+document.getElementById("Clicks").addEventListener("click" , function {
+Clicks = Clicks + clickers;
+  )};
+document.getElementById("clickers").addEventListener("click" , function {
+if (Clicks >= 10) {
+  clickers = clickers + 1;
+  score = score - 10;
+  document.getElementById("scoreText").innertext = "Clicks:" + clicks;
+  document.getElementById("ClickerText").innertext = "Clickers:" + clickers;
+)};
 
     
   </script>
- <p>Score: 0</p> 
 </body>  
 
 
